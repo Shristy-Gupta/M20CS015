@@ -7,7 +7,7 @@
 ### Web App Name: Sudoku
 Web App functionality
 1) Sudoku is a simple webapp that is developed using HTML, Javascript and CSS 
-2) This is a game is a math puzzle and the objective is to fill the empty sqaures using numbers 1-9 exactly once each row, column and nine 3 X 3 grid
+2) This game is a math puzzle and the objective is to fill the empty sqaures using numbers 1-9 exactly once each row, column and nine 3 X 3 grid
 3) After filling all the sqaures the verify button will verify the puzzle and send the message if won!
 
 ![image](https://user-images.githubusercontent.com/26459890/131553015-8b81b99c-03ab-42b1-b70d-7d6b48ec6f37.png)
