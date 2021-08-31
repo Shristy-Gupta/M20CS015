@@ -1,12 +1,19 @@
 # Course CSL7510 Virtualization and Cloud Computing
-## Assessment 1: Virtual Machines & Dockers
-## Question 2) Docker Application Deployment
-## Submitted By: Shristy Gupta M20CS015
-## Submitted To: Dr. Sumit Kalra
+### Assessment 1: Virtual Machines & Dockers
+### Question 2) Docker Application Deployment
+### Submitted By: Shristy Gupta M20CS015
+### Submitted To: Dr. Sumit Kalra
 
 ### Web App Name: Sudoku
+Web App functionality
+1) Sudoku is a simple webapp that is developed using HTML, Javascript and CSS 
+2) This is a game is a math puzzle and the objective is to fill the empty sqaures using numbers 1-9 exactly once each row, column and nine 3 X 3 grid
+3) After filling all the sqaures the verify button will verify the puzzle and send the message if won!
 
-Steps Followed:
+![image](https://user-images.githubusercontent.com/26459890/131553015-8b81b99c-03ab-42b1-b70d-7d6b48ec6f37.png)
+
+
+### Steps Followed for deploying on Docker:
 1) Installed the docker for windows from docker toolbox, since the virtualbox and docker has conflicting configurations (Hyper-V conflict) from https://docs.docker.com/desktop/windows/install/ 
 2) Created account docker hub with username shristy26 and a new repository shristy26/m20cs015server
 ``` sh
@@ -47,3 +54,6 @@ docker build .  -t m20cs015
 docker run -it -p 8000:80 m20cs015
 ```
 8) Finally the app will run on url: http://localhost:8000/dockerFolder/
+
+### Steps to run Sudoku App 
+1) Either download the zip folder of this repo or clone this repo using :
