@@ -70,4 +70,6 @@ docker build .  -t m20cs015
 ``` sh
 docker run -it -p 8000:80 m20cs015
 ```
-8) Finally the app will run on url: http://localhost:8000/dockerFolder/
+8) Finally the app will run on url: http://localhost:8000/dockerFolder/ It will look something as follows
+![image](https://user-images.githubusercontent.com/26459890/131554583-7c3740cb-6279-4345-aab9-90df933ad952.png)
+
