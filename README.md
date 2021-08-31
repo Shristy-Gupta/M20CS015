@@ -56,4 +56,18 @@ docker run -it -p 8000:80 m20cs015
 8) Finally the app will run on url: http://localhost:8000/dockerFolder/
 
 ### Steps to run Sudoku App 
-1) Either download the zip folder of this repo or clone this repo using :
+1) Either download the zip folder of this repo or clone this repo using :https://github.com/Shristy-Gupta/M20CS015.git
+2) In termainal type following commands to move inside sudoku folder
+``` sh
+cd mm20cs015webapp
+cd sudoku
+```
+3) To create the docker image type following commands, you can use another tag as well like ver1
+``` sh
+docker build .  -t m20cs015
+```
+4) To run this image in specific port used following command
+``` sh
+docker run -it -p 8000:80 m20cs015
+```
+8) Finally the app will run on url: http://localhost:8000/dockerFolder/
