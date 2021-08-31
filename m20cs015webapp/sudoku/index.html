@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sudoku</title>
+        <link rel="stylesheet" href="style.css">
+        <script language="javascript" type="text/javascript" src="ArrayFunctions.js"></script>
+        <script language="javascript" type="text/javascript" src="ViewModel.js"></script>
+        <script language="javascript" type="text/javascript" src="SudokuGame.js"></script>
+        <script language="javascript" type="text/javascript" src="SudokuCell.js"></script>
+    </head>
+    <body>
+        <div class="game">
+            <table id="board">
+                <tr class="row">
+                    <td id="cell-0"   onclick="viewModel.selectedCell = 0" class="cell"></td>
+                    <td id="cell-1"   onclick="viewModel.selectedCell = 1" class="cell"></td>
+                    <td id="cell-2"   onclick="viewModel.selectedCell = 2" class="cell border-r"></td>
+                    <td id="cell-3"   onclick="viewModel.selectedCell = 3" class="cell"></td>
+                    <td id="cell-4"   onclick="viewModel.selectedCell = 4" class="cell"></td>
+                    <td id="cell-5"   onclick="viewModel.selectedCell = 5" class="cell border-r"></td>
+                    <td id="cell-6"   onclick="viewModel.selectedCell = 6" class="cell"></td>
+                    <td id="cell-7"   onclick="viewModel.selectedCell = 7" class="cell"></td>
+                    <td id="cell-8"   onclick="viewModel.selectedCell = 8" class="cell"></td>
+                </tr>
+                <tr class="row">
+                    <td id="cell-9"   onclick="viewModel.selectedCell = 9" class="cell"></td>
+                    <td id="cell-10" onclick="viewModel.selectedCell = 10" class="cell"></td>
+                    <td id="cell-11" onclick="viewModel.selectedCell = 11" class="cell border-r"></td>
+                    <td id="cell-12" onclick="viewModel.selectedCell = 12" class="cell"></td>
+                    <td id="cell-13" onclick="viewModel.selectedCell = 13" class="cell"></td>
+                    <td id="cell-14" onclick="viewModel.selectedCell = 14" class="cell border-r"></td>
+                    <td id="cell-15" onclick="viewModel.selectedCell = 15" class="cell"></td>
+                    <td id="cell-16" onclick="viewModel.selectedCell = 16" class="cell"></td>
+                    <td id="cell-17" onclick="viewModel.selectedCell = 17" class="cell"></td>
+                </tr>
+                <tr class="row">
+                    <td id="cell-18" onclick="viewModel.selectedCell = 18" class="cell"></td>
+                    <td id="cell-19" onclick="viewModel.selectedCell = 19" class="cell"></td>
+                    <td id="cell-20" onclick="viewModel.selectedCell = 20" class="cell border-r"></td>
+                    <td id="cell-21" onclick="viewModel.selectedCell = 21" class="cell"></td>
+                    <td id="cell-22" onclick="viewModel.selectedCell = 22" class="cell"></td>
+                    <td id="cell-23" onclick="viewModel.selectedCell = 23" class="cell border-r"></td>
+                    <td id="cell-24" onclick="viewModel.selectedCell = 24" class="cell"></td>
+                    <td id="cell-25" onclick="viewModel.selectedCell = 25" class="cell"></td>
+                    <td id="cell-26" onclick="viewModel.selectedCell = 26" class="cell"></td>
+                </tr>
+                <tr class="row">
+                    <td id="cell-27" onclick="viewModel.selectedCell = 27" class="cell border-t"></td>
+                    <td id="cell-28" onclick="viewModel.selectedCell = 28" class="cell border-t"></td>
+                    <td id="cell-29" onclick="viewModel.selectedCell = 29" class="cell border-r border-t"></td>
+                    <td id="cell-30" onclick="viewModel.selectedCell = 30" class="cell border-t"></td>
+                    <td id="cell-31" onclick="viewModel.selectedCell = 31" class="cell border-t"></td>
+                    <td id="cell-32" onclick="viewModel.selectedCell = 32" class="cell border-r border-t"></td>
+                    <td id="cell-33" onclick="viewModel.selectedCell = 33" class="cell border-t"></td>
+                    <td id="cell-34" onclick="viewModel.selectedCell = 34" class="cell border-t"></td>
+                    <td id="cell-35" onclick="viewModel.selectedCell = 35" class="cell border-t"></td>
+                </tr>
+                <tr class="row">
+                    <td id="cell-36" onclick="viewModel.selectedCell = 36" class="cell"></td>
+                    <td id="cell-37" onclick="viewModel.selectedCell = 37" class="cell"></td>
+                    <td id="cell-38" onclick="viewModel.selectedCell = 38" class="cell border-r"></td>
+                    <td id="cell-39" onclick="viewModel.selectedCell = 39" class="cell"></td>
+                    <td id="cell-40" onclick="viewModel.selectedCell = 40" class="cell"></td>
+                    <td id="cell-41" onclick="viewModel.selectedCell = 41" class="cell border-r"></td>
+                    <td id="cell-42" onclick="viewModel.selectedCell = 42" class="cell"></td>
+                    <td id="cell-43" onclick="viewModel.selectedCell = 43" class="cell"></td>
+                    <td id="cell-44" onclick="viewModel.selectedCell = 44" class="cell"></td>
+                </tr>
+                <tr class="row">
+                    <td id="cell-45" onclick="viewModel.selectedCell = 45" class="cell"></td>
+                    <td id="cell-46" onclick="viewModel.selectedCell = 46" class="cell"></td>
+                    <td id="cell-47" onclick="viewModel.selectedCell = 47" class="cell border-r"></td>
+                    <td id="cell-48" onclick="viewModel.selectedCell = 48" class="cell"></td>
+                    <td id="cell-49" onclick="viewModel.selectedCell = 49" class="cell"></td>
+                    <td id="cell-50" onclick="viewModel.selectedCell = 50" class="cell border-r"></td>
+                    <td id="cell-51" onclick="viewModel.selectedCell = 51" class="cell"></td>
+                    <td id="cell-52" onclick="viewModel.selectedCell = 52" class="cell"></td>
+                    <td id="cell-53" onclick="viewModel.selectedCell = 53" class="cell"></td>
+                </tr>
+                <tr class="row">
+                    <td id="cell-54" onclick="viewModel.selectedCell = 54" class="cell border-t"></td>
+                    <td id="cell-55" onclick="viewModel.selectedCell = 55" class="cell border-t"></td>
+                    <td id="cell-56" onclick="viewModel.selectedCell = 56" class="cell border-r border-t"></td>
+                    <td id="cell-57" onclick="viewModel.selectedCell = 57" class="cell border-t"></td>
+                    <td id="cell-58" onclick="viewModel.selectedCell = 58" class="cell border-t"></td>
+                    <td id="cell-59" onclick="viewModel.selectedCell = 59" class="cell border-r border-t"></td>
+                    <td id="cell-60" onclick="viewModel.selectedCell = 60" class="cell border-t"></td>
+                    <td id="cell-61" onclick="viewModel.selectedCell = 61" class="cell border-t"></td>
+                    <td id="cell-62" onclick="viewModel.selectedCell = 62" class="cell border-t"></td>
+                </tr>
+                <tr class="row">
+                    <td id="cell-63" onclick="viewModel.selectedCell = 63" class="cell"></td>
+                    <td id="cell-64" onclick="viewModel.selectedCell = 64" class="cell"></td>
+                    <td id="cell-65" onclick="viewModel.selectedCell = 65" class="cell border-r"></td>
+                    <td id="cell-66" onclick="viewModel.selectedCell = 66" class="cell"></td>
+                    <td id="cell-67" onclick="viewModel.selectedCell = 67" class="cell"></td>
+                    <td id="cell-68" onclick="viewModel.selectedCell = 68" class="cell border-r"></td>
+                    <td id="cell-69" onclick="viewModel.selectedCell = 69" class="cell"></td>
+                    <td id="cell-70" onclick="viewModel.selectedCell = 70" class="cell"></td>
+                    <td id="cell-71" onclick="viewModel.selectedCell = 71" class="cell"></td>
+                </tr>
+                <tr class="row">
+                    <td id="cell-72" onclick="viewModel.selectedCell = 72" class="cell"></td>
+                    <td id="cell-73" onclick="viewModel.selectedCell = 73" class="cell"></td>
+                    <td id="cell-74" onclick="viewModel.selectedCell = 74" class="cell border-r"></td>
+                    <td id="cell-75" onclick="viewModel.selectedCell = 75" class="cell"></td>
+                    <td id="cell-76" onclick="viewModel.selectedCell = 76" class="cell"></td>
+                    <td id="cell-77" onclick="viewModel.selectedCell = 77" class="cell border-r"></td>
+                    <td id="cell-78" onclick="viewModel.selectedCell = 78" class="cell"></td>
+                    <td id="cell-79" onclick="viewModel.selectedCell = 79" class="cell"></td>
+                    <td id="cell-80" onclick="viewModel.selectedCell = 80" class="cell"></td>
+                </tr>
+            </table>
+            <div class="button-row">
+                <button onclick="viewModel.fill(null)">&nbsp;</button>
+                <button onclick="viewModel.fill(1)">1</button>
+                <button onclick="viewModel.fill(2)">2</button>
+                <button onclick="viewModel.fill(3)">3</button>
+                <button onclick="viewModel.fill(4)">4</button>
+                <button onclick="viewModel.fill(5)">5</button>
+                <button onclick="viewModel.fill(6)">6</button>
+                <button onclick="viewModel.fill(7)">7</button>
+                <button onclick="viewModel.fill(8)">8</button>
+                <button onclick="viewModel.fill(9)">9</button>
+                <button onclick="viewModel.verify()">Verify</button>
+            </div>
+        </div>
+    </body>
+</html>

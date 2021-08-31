@@ -1,0 +1,5 @@
+FROM shristy26/m20cs015server:ver1
+WORKDIR /var/www/html
+RUN mkdir dockerFolder
+WORKDIR /var/www/html/dockrFolder
+COPY . /var/www/html/dockerFolder/
